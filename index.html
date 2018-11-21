@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Hello GatsbyJS</title>
+
+		<meta name="description" content="An introduction to Docker">
+		<meta name="author" content="Nick Selvaggio">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="sego/sego_style.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Hello GatsbyJS</h2>
+					<p>
+						<small><a href="http://www.nickgs.com">Nick Selvaggio</a> / <a href="http://www.segosolutions.com">www.segosolutions.com</a></small>
+					</p>
+					<img style="border:none; width: 300px; background: none" src="images/gatsby-vertical-negative.png"/>
+				</section>
+
+				<section>
+					<h2>A little about me.</h2>
+				</section>
+
+				<section data-transition="linear" data-background="#527c97" data-background-transition="slide">
+					<h2>A little about you.</h2>
+				</section>
+
+				<section>
+					<section>
+						<h2>So what is GatsbyJS?</h2>
+						<p><a href="https://jamstack.org/">JAMStack!</a></p>
+					</section>
+					<section class="light-blue">
+						<h2>But why?</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Speed, speed, speed!</li>
+							<li class="fragment" data-fragment-index="2">Improved security</li>
+							<li class="fragment" data-fragment-index="3">Simplified deployments</li>
+						</ul>
+					</section>
+					<section class="light-blue">
+						<h2>What is different here?</h2>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Leverages ReactJS for UI / Component based architecture</li>
+							<li class="fragment" data-fragment-index="2">Leverages GraphQL to query and pull in data into components</li>
+							<li class="fragment" data-fragment-index="3">Simple architecture for developing plugins</li>
+						</ul>
+					</section>
+					<section class="light-blue">
+						<h2>Ugh another thing to learn?</h2>
+						<p>YES... but...</p>
+					</section>
+					<section class="light-blue">
+						<h2>From what I am experiencing Gatbsy is a great tool to learn other tools (in a curated way)!</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Using GatsbyJS</h2>
+					</section>
+					<section>
+						<h2>Installing</h2>
+						<p <pre><code class="bash" data-trim>>npm install --global gatsby-cli</code></pre></p>
+					</section>
+					<section>
+						<h2>Creating a new site</h2>
+						<p <pre><code class="bash" data-trim>>gatsby new mySite</code></pre></p>
+					</section>
+					<section>
+						<h2>Developing</h2>
+						<p <pre><code class="bash" data-trim>>gatsby develop</code></pre></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Plugins</h2>
+						<p class="fragment" data-fragment-index="1">Source Plugins</p>
+						<p class="fragment" data-fragment-index="2">Transformer Plugins</p>
+						<p class="fragment" data-fragment-index="3"><a href="https://www.gatsbyjs.org/plugins/" target="_blank">A growing ecosystem of plugins</a></p>
+					</section>
+					<section>
+						<h2>Source Plugins</h2>
+						<p>Brings in Data from different locations.</p>
+					</section>
+					<section>
+						<h2>Transformer Plugins</h2>
+						<p>Manipulates data from source plugins</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What about Drupal?</h2>
+					</section>
+					<section>
+						<h2>The content mesh...</h2>
+						<img src="/images/content-mesh.png" style="width: 600px"/>
+						<p style="font-size: .4em">https://www.gatsbyjs.org/blog/2018-10-04-journey-to-the-content-mesh/</p>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Ok enough talk, lets play!</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Questions?</h2>
+						<p>Slides available at:<br/><a href="http://nickgs.com/hello-gatsby/">http://nickgs.com/hello-gatsby/</a></p>
+
+						<p>Lets connect: </p>
+						<a href="https://www.linkedin.com/in/nickgs/">https://www.linkedin.com/in/nickgs/</a>
+						<a href="https://twitter.com/direct">https://twitter.com/direct</a>
+					</section>
+				</section>
+			</div>
+			<footer class="sego-logo">
+				<a href="http://www.segosolutions.net/"><img src="sego/sego_logo_blkbg.png" alt="Sego Solutions logo" height="50" /></a>
+			</footer>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
